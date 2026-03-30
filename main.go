@@ -30,6 +30,16 @@ func (s *StringsChain) Trim(cutset string) *StringsChain {
 	return s
 }
 
+func (s *StringsChain) ToLower() *StringsChain {
+	s.value = strings.ToLower(s.value)
+	return s
+}
+
+func (s *StringsChain) ToUpper() *StringsChain {
+	s.value = strings.ToUpper(s.value)
+	return s
+}
+
 func (s *StringsChain) Nothing() *StringsChain {
 
 	return s
